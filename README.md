@@ -1,5 +1,5 @@
 # grunt-stylelint-reporter
-[![Build Status](https://travis-ci.org/35n139e/grunt-stylelint-reporter.svg?branch=develop)](https://travis-ci.org/35n139e/grunt-stylelint-reporter)
+[![Build Status](https://travis-ci.org/35n139e/grunt-stylelint-reporter.svg?branch=master)](https://travis-ci.org/35n139e/grunt-stylelint-reporter)
 
 > The best Grunt plugin ever.
 
