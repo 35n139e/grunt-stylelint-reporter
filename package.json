@@ -1,6 +1,6 @@
 {
   "name": "grunt-stylelint-reporter",
-  "description": "The best Grunt plugin ever.",
+  "description": "stylelint htmlreporter",
   "version": "0.1.0",
   "homepage": "https://github.com/35n139e/grunt-stylelint-reporter",
   "author": {

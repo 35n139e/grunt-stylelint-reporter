@@ -9,17 +9,18 @@ var fs = require("fs"),
 
 module.exports = function(grunt) {
     grunt.registerTask('reporter', 'stylelint htmlreporter plugin', function() {
-            var options = this.options({
-              temp: 'test/template.ejs',
-              files: 'test/test.css',
-              syntax: 'scss',
-              ports: 5963,
-              outputJson:{
-                  flag:false,
-                  path:'test/test.json'
-              }
-            });
-            var done = this.async();
+        var done = this.async();
+        var options = this.options({
+          temp: 'test/template.ejs',
+          files: 'test/test.css',
+          syntax: 'scss',
+          ports: 5963,
+          outputJson:{
+              flag:false,
+              path:'test/test.json'
+          }
+        });
+
         stylelint.lint({
             files: options.files,
             formatter:"json",
@@ -37,7 +38,16 @@ module.exports = function(grunt) {
             var templateFile = fs.readFileSync(options.temp, 'utf8');
             var server = http.createServer();
             server.on('request', doRequest);
-            server.listen(options.ports);
+            server.listen(options.ports,function(){
+                console.log('Hit CTRL-C to stop the server');
+
+            });
+            process.on('SIGINT', function () {
+                console.log('http-server stopped');
+                server.close();
+                done();
+                process.exit();
+            });
             function doRequest(req, res){
                 var tmp = ejs.render(templateFile, {
                     title:'stylelint result',
@@ -46,11 +56,12 @@ module.exports = function(grunt) {
                 res.setHeader('Content-Type', 'text/html');
                 res.write(tmp);
                 res.end();
-                done();
             }
+            done();
         }).catch(function(err) {
             console.log("error");
             console.error(err.stack);
         });
+
     });
 };
