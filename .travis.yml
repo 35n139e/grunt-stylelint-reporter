@@ -1,13 +1,13 @@
+sudo: false
 language: node_js
-
 node_js:
-  - "0.12.7"
-
-# masterとdevelopブランチのみ実行対象に入れる
+  - 'stable'
+  - '0.12'
+notifications:
+  email: false
 branches:
   only:
     - master
     - develop
-
 before_script:
-  - npm install -g grunt-cli ejs
+  - npm install -g grunt-cli

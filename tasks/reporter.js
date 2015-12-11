@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         var options = this.options({
           temp: 'test/template.ejs',
           files: 'test/test.css',
-          syntax: 'scss',
+          syntax: 'css',
           ports: 5963,
           outputJson:{
               flag:false,
