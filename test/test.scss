@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@function fontSize($size) {
+	@return ceil(percentage($size / $_baseFont-Size));
+}
+
+body#1-idid{
+	color: $_baseFont-Color;
+	font: #{$_baseFont-Size}/#{$_baseLineHeight} #{$_baseFont-family};
+	ko:d;
+}

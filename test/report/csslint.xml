@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<csslint>
+	<file name="develop/resources/stylesheets/style.css">
+		<issue line="121" char="40" severity="warning" reason="Heading (h1) has already been defined." evidence="a, button, input, textarea, div, span, h1, h2, h3, h4, h5, h6, table, ol, ul, li, dl, dt, dd, p {"/>
+		<issue line="121" char="44" severity="warning" reason="Heading (h2) has already been defined." evidence="a, button, input, textarea, div, span, h1, h2, h3, h4, h5, h6, table, ol, ul, li, dl, dt, dd, p {"/>
+		<issue line="121" char="52" severity="warning" reason="Heading (h4) has already been defined." evidence="a, button, input, textarea, div, span, h1, h2, h3, h4, h5, h6, table, ol, ul, li, dl, dt, dd, p {"/>
+		<issue line="121" char="56" severity="warning" reason="Heading (h5) has already been defined." evidence="a, button, input, textarea, div, span, h1, h2, h3, h4, h5, h6, table, ol, ul, li, dl, dt, dd, p {"/>
+		<issue line="121" char="60" severity="warning" reason="Heading (h6) has already been defined." evidence="a, button, input, textarea, div, span, h1, h2, h3, h4, h5, h6, table, ol, ul, li, dl, dt, dd, p {"/>
+		<issue line="121" char="48" severity="warning" reason="Heading (h3) has already been defined." evidence="a, button, input, textarea, div, span, h1, h2, h3, h4, h5, h6, table, ol, ul, li, dl, dt, dd, p {"/>
+		<issue line="122" char="3" severity="warning" reason="The box-sizing property isn't supported in IE6 and IE7." evidence="  box-sizing: border-box;"/>
+		<issue line="132" char="1" severity="warning" reason="Outlines should only be modified using :focus." evidence="button {"/>
+		<issue line="137" char="3" severity="warning" reason="The property -moz-appearance is compatible with -webkit-appearance and should be included as well." evidence="  -webkit-appearance: none;"/>
+		<issue line="161" char="3" severity="warning" reason="Fallback border-color (hex or RGB) should precede RGBA border-color." evidence="  border-color: rgba(82, 168, 236, 0.8);"/>
+		<issue line="207" char="3" severity="warning" reason="Use of !important" evidence="  padding-bottom: 0px !important;"/>
+		<issue line="207" char="19" severity="warning" reason="Values of 0 shouldn't have units specified." evidence="  padding-bottom: 0px !important;"/>
+		<issue line="212" char="3" severity="warning" reason="Use of !important" evidence="  padding-top: 0px !important;"/>
+		<issue line="212" char="16" severity="warning" reason="Values of 0 shouldn't have units specified." evidence="  padding-top: 0px !important;"/>
+		<issue line="217" char="3" severity="warning" reason="Use of !important" evidence="  padding-bottom: 5px !important;"/>
+		<issue line="222" char="3" severity="warning" reason="Use of !important" evidence="  padding-top: 5px !important;"/>
+		<issue line="227" char="3" severity="warning" reason="Use of !important" evidence="  padding-bottom: 10px !important;"/>
+		<issue line="232" char="3" severity="warning" reason="Use of !important" evidence="  padding-top: 10px !important;"/>
+		<issue line="237" char="3" severity="warning" reason="Use of !important" evidence="  padding-bottom: 15px !important;"/>
+		<issue line="242" char="3" severity="warning" reason="Use of !important" evidence="  padding-top: 15px !important;"/>
+		<issue line="247" char="3" severity="warning" reason="Use of !important" evidence="  padding-bottom: 20px !important;"/>
+		<issue line="252" char="3" severity="warning" reason="Use of !important" evidence="  padding-top: 20px !important;"/>
+		<issue line="257" char="3" severity="warning" reason="Use of !important" evidence="  padding-bottom: 25px !important;"/>
+		<issue line="262" char="3" severity="warning" reason="Use of !important" evidence="  padding-top: 25px !important;"/>
+		<issue line="267" char="3" severity="warning" reason="Use of !important" evidence="  padding-bottom: 30px !important;"/>
+		<issue line="272" char="3" severity="warning" reason="Use of !important" evidence="  padding-top: 30px !important;"/>
+		<issue line="277" char="3" severity="warning" reason="Use of !important" evidence="  padding-bottom: 35px !important;"/>
+		<issue line="282" char="3" severity="warning" reason="Use of !important" evidence="  padding-top: 35px !important;"/>
+		<issue line="287" char="3" severity="warning" reason="Use of !important" evidence="  padding-bottom: 40px !important;"/>
+		<issue line="292" char="3" severity="warning" reason="Use of !important" evidence="  padding-top: 40px !important;"/>
+		<issue line="297" char="3" severity="warning" reason="Use of !important" evidence="  margin-bottom: 0px !important;"/>
+		<issue line="297" char="18" severity="warning" reason="Values of 0 shouldn't have units specified." evidence="  margin-bottom: 0px !important;"/>
+		<issue line="302" char="3" severity="warning" reason="Use of !important" evidence="  margin-top: 0px !important;"/>
+		<issue line="302" char="15" severity="warning" reason="Values of 0 shouldn't have units specified." evidence="  margin-top: 0px !important;"/>
+		<issue line="307" char="3" severity="warning" reason="Use of !important" evidence="  margin-bottom: 5px !important;"/>
+		<issue line="312" char="3" severity="warning" reason="Use of !important" evidence="  margin-top: 5px !important;"/>
+		<issue line="317" char="3" severity="warning" reason="Use of !important" evidence="  margin-bottom: 10px !important;"/>
+		<issue line="322" char="3" severity="warning" reason="Use of !important" evidence="  margin-top: 10px !important;"/>
+		<issue line="327" char="3" severity="warning" reason="Use of !important" evidence="  margin-bottom: 15px !important;"/>
+		<issue line="332" char="3" severity="warning" reason="Use of !important" evidence="  margin-top: 15px !important;"/>
+		<issue line="337" char="3" severity="warning" reason="Use of !important" evidence="  margin-bottom: 20px !important;"/>
+		<issue line="342" char="3" severity="warning" reason="Use of !important" evidence="  margin-top: 20px !important;"/>
+		<issue line="347" char="3" severity="warning" reason="Use of !important" evidence="  margin-bottom: 25px !important;"/>
+		<issue line="352" char="3" severity="warning" reason="Use of !important" evidence="  margin-top: 25px !important;"/>
+		<issue line="357" char="3" severity="warning" reason="Use of !important" evidence="  margin-bottom: 30px !important;"/>
+		<issue line="362" char="3" severity="warning" reason="Use of !important" evidence="  margin-top: 30px !important;"/>
+		<issue line="367" char="3" severity="warning" reason="Use of !important" evidence="  margin-bottom: 35px !important;"/>
+		<issue line="372" char="3" severity="warning" reason="Use of !important" evidence="  margin-top: 35px !important;"/>
+		<issue line="377" char="3" severity="warning" reason="Use of !important" evidence="  margin-bottom: 40px !important;"/>
+		<issue line="382" char="3" severity="warning" reason="Use of !important" evidence="  margin-top: 40px !important;"/>
+		<issue line="387" char="3" severity="warning" reason="Use of !important" evidence="  display: none !important;"/>
+		<issue severity="warning" reason="Too many !important declarations (37), try to use less than 10 to avoid specificity issues." evidence=""/>
+		<issue severity="warning" reason="You have 2 h1s, 2 h2s, 2 h3s, 2 h4s, 2 h5s, 2 h6s defined in this stylesheet." evidence=""/>
+	</file>
+	<file name="develop/resources/stylesheets/tidy.css">
+		<issue line="3" char="1" severity="error" reason="@charset not allowed here." evidence="@charset 'UTF-8';"/>
+		<issue line="69" char="1" severity="warning" reason="Heading (h1) has already been defined." evidence="h1,"/>
+		<issue line="71" char="3" severity="warning" reason="The box-sizing property isn't supported in IE6 and IE7." evidence="  box-sizing: border-box;"/>
+		<issue line="95" char="3" severity="warning" reason="Use of !important" evidence="  margin-bottom: 0px !important;"/>
+		<issue line="95" char="18" severity="warning" reason="Values of 0 shouldn't have units specified." evidence="  margin-bottom: 0px !important;"/>
+		<issue line="99" char="3" severity="warning" reason="Use of !important" evidence="  display: none !important;"/>
+		<issue severity="warning" reason="You have 2 h1s defined in this stylesheet." evidence=""/>
+	</file>
+</csslint>

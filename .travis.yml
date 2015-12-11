@@ -1,0 +1,13 @@
+language: node_js
+
+node_js:
+  - "0.12.7"
+
+# masterとdevelopブランチのみ実行対象に入れる
+branches:
+  only:
+    - master
+    - develop
+
+before_script:
+  - npm install -g grunt-cli ejs

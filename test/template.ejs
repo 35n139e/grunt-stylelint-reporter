@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1><%= title %></h1>
+    </header>
+
+<% for(var i=0; i < jsondata.length; i++) { %>
+<h2>Source ： <small><%= jsondata[i].source %></small></h2>
+<table class="table table-bordered">
+<thead>
+    <tr>
+        <td></td>
+        <th>line</th>
+        <th>column</th>
+        <th>rule</th>
+        <th>severity</th>
+        <th>text</th>
+    </tr>
+</thead>
+<tbody>
+<% for(var k=0; k < jsondata[i].warnings.length; k++) { %>
+    <tr>
+        <th>warnings</th>
+        <td><%= jsondata[i].warnings[k].line %></td>
+        <td><%= jsondata[i].warnings[k].column %></td>
+        <td><%= jsondata[i].warnings[k].rule %></td>
+        <td><%= jsondata[i].warnings[k].severity %></td>
+        <td><%= jsondata[i].warnings[k].text %></td>
+    </tr>
+<% } %>
+</tbody>
+</table>
+<% } %>
+</div>
+</body>
+</html>
