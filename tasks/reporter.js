@@ -39,11 +39,10 @@ module.exports = function(grunt) {
             var server = http.createServer();
             server.on('request', doRequest);
             server.listen(options.ports,function(){
-                console.log('Hit CTRL-C to stop the server');
-
+                console.log('Hit CTRL-C to stop the htmlreporter-server');
             });
             process.on('SIGINT', function () {
-                console.log('http-server stopped');
+                console.log('htmlreporter-server stopped');
                 server.close();
                 done();
                 process.exit();
@@ -57,11 +56,10 @@ module.exports = function(grunt) {
                 res.write(tmp);
                 res.end();
             }
-            done();
+
         }).catch(function(err) {
             console.log("error");
             console.error(err.stack);
         });
-
     });
 };
