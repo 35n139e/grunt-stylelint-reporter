@@ -12,10 +12,10 @@ module.exports = function (grunt) {
 		reporter: {
 			options: {
 				temp: 'test/template.ejs',
-				files: 'test/test.css',
+				files: 'test/*.css',
 				syntax: 'css',
 				outputJson:{
-					flag:true,
+					flag:false,
 					path:'test/test.json'
 				},
 				ports: 5963
