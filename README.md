@@ -74,4 +74,4 @@ Default value: `'test/test.json'`
 json output file path
 
 ## Release History
-* 2015-12-17 v0.1.0 Initial release.
+* 2015-12-17 v0.1.1 Initial release.
