@@ -12,13 +12,14 @@ module.exports = function (grunt) {
 		reporter: {
 			options: {
 				temp: 'test/template.ejs',
-				files: 'test/*.css',
+				files: 'test/test.css',
 				syntax: 'css',
+				configFile: 'test/stylelintConfig',
+				ports: 5963,
 				outputJson:{
-					flag:false,
+					flag:true,
 					path:'test/test.json'
-				},
-				ports: 5963
+				}
 			}
 		}
 	});

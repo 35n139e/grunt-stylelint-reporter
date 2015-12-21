@@ -4,7 +4,7 @@ node_js:
   - 'stable'
   - '0.12.7'
 notifications:
-  email: false
+  email: true
 branches:
   only:
     - master

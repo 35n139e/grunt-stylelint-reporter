@@ -1,7 +1,3 @@
 {
-    "extends": "stylelint-config-suitcss",
-    "rules": {
-        "indentation": [2, "tab"],
-        "number-leading-zero": 0
-    }
+    "extends": "stylelint-config-suitcss"
 }

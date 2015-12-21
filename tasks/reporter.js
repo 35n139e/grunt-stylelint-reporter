@@ -1,27 +1,31 @@
-
-
 'use strict';
 var fs = require("fs"),
     http = require('http'),
     url = require('url'),
     ejs = require('ejs'),
+    path = require('path'),
     stylelint = require("stylelint");
 
 module.exports = function(grunt) {
     grunt.registerTask('reporter', 'stylelint htmlreporter plugin', function() {
         var done = this.async();
+        var stylelintConfig;
         var options = this.options({
-          temp: 'test/template.ejs',
-          files: 'test/test.css',
-          syntax: 'css',
-          ports: 5963,
+          temp: '',
+          files: '',
+          syntax: '',
+          configFile: '',
+          ports: '',
           outputJson:{
-              flag:false,
-              path:'test/test.json'
+              flag:'',
+              path:''
           }
         });
-
+        if(options.configFile !== ''){
+            stylelintConfig = require(process.cwd() + '/' + options.configFile);
+        }
         stylelint.lint({
+            config: stylelintConfig,
             files: options.files,
             formatter:"json",
             syntax:options.syntax

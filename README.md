@@ -23,18 +23,19 @@ In your project's Gruntfile, add a section named `reporter` to the data object p
 
 ```js
 grunt.initConfig({
-    reporter: {
-        options: {
-            temp: 'test/template.ejs',
-            files: 'test/test.css',
-            syntax: 'css',
-            ports: 5963,
-            outputJson:{
-                flag:false,
-                path:'test/test.json'
-            }
-        }
-    }
+	reporter: {
+		options: {
+			temp: 'test/template.ejs',
+			files: 'test/test.css',
+			syntax: 'css',
+			configFile: 'test/stylelintConfig',
+			ports: 5963,
+			outputJson:{
+				flag:true,
+				path:'test/test.json'
+			}
+		}
+	}
 });
 ```
 
@@ -48,13 +49,19 @@ ejs template file
 #### options.files
 Type: `String`
 Default value: `'test/test.css'`
-
-lint target css or scss files
+lint target files
 
 #### options.syntax
 Type: `String`
 Default value: `'css'`
 if lint target scss , `'scss'`
+
+#### options.configFile
+Type: `String`
+Default value: ``
+If nothing is set , you will see the `.stylelintrc` that are placed directly under the root.
+If in case you want to put the config in any directory , please specify a file path from the root as Overview.
+(At this time, the extension of the file should be in `.json`, or `.js`, Please do extension is not included in the `configFile`.)
 
 #### options.ports
 Type: `Num`
@@ -74,6 +81,7 @@ Default value: `'test/test.json'`
 json output file path
 
 ## Release History
+* 2015-12-21 v0.1.5 A configuration file it has to be specified in any directory.
 * 2015-12-17 v0.1.4 package.json bugfix.
 * 2015-12-17 v0.1.3 package.json dependencies modifired.
 * 2015-12-17 v0.1.2 package.json bugfix.
