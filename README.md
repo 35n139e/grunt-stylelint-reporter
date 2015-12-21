@@ -43,22 +43,26 @@ grunt.initConfig({
 
 #### options.temp
 Type: `String`
-Default value: `'test/template.ejs'`
+Default value: `null`
+
 ejs template file
 
 #### options.files
 Type: `String`
-Default value: `'test/test.css'`
+Default value: `null`
+
 lint target files
 
 #### options.syntax
 Type: `String`
 Default value: `'css'`
+
 if lint target scss , `'scss'`
 
 #### options.configFile
 Type: `String`
-Default value: ``
+Default value: `null`
+
 If nothing is set , you will see the `.stylelintrc` that are placed directly under the root.
 If in case you want to put the config in any directory , please specify a file path from the root as Overview.
 (At this time, the extension of the file should be in `.json`, or `.js`, Please do extension is not included in the `configFile`.)
@@ -77,7 +81,7 @@ if you want json output file,  `true` this.
 
 ##### options.outputJson.path
 Type: `String`
-Default value: `'test/test.json'`
+Default value: `null`
 json output file path
 
 ## Release History

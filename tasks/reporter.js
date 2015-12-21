@@ -13,11 +13,11 @@ module.exports = function(grunt) {
         var options = this.options({
           temp: '',
           files: '',
-          syntax: '',
+          syntax: 'css',
           configFile: '',
           ports: '',
           outputJson:{
-              flag:'',
+              flag:false,
               path:''
           }
         });
