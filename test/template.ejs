@@ -11,7 +11,8 @@
 			<h1><%= title %></h1>
 		</header>
 		<% for(var i=0; i < jsondata.length; i++) { %>
-			<h2>Source ： <small><%= jsondata[i].source %></small></h2>
+		<h2>Source ： <small><%= jsondata[i].source %></small></h2>
+			<% if(jsondata[i].warnings.length > 0) { %>
 			<table class="table table-bordered table-striped">
 				<thead>
 					<tr>
@@ -25,18 +26,28 @@
 				</thead>
 				<tbody>
 					<% for(var k=0; k < jsondata[i].warnings.length; k++) { %>
-						<tr>
-							<th><span class="label label-warning">Warning</span></th>
-							<td><%= jsondata[i].warnings[k].line %></td>
-							<td><%= jsondata[i].warnings[k].column %></td>
-							<td><%= jsondata[i].warnings[k].rule %></td>
-							<td><%= jsondata[i].warnings[k].severity %></td>
-							<td><%= jsondata[i].warnings[k].text %></td>
-						</tr>
-						<% } %>
-					</tbody>
-				</table>
-				<% } %>
+					<tr>
+					<% if(!jsondata[i].warnings[k].line) { %>
+						<th><span class="label label-danger">Invalid</span></th>
+					<% } else { %>
+						<th><span class="label label-warning">Warning</span></th>
+					<% } %>
+						<td><%= jsondata[i].warnings[k].line %></td>
+						<td><%= jsondata[i].warnings[k].column %></td>
+						<td><%= jsondata[i].warnings[k].rule %></td>
+						<td><%= jsondata[i].warnings[k].severity %></td>
+						<td><%= jsondata[i].warnings[k].text %></td>
+					</tr>
+					<% } %>
+				</tbody>
+			</table>
+			<% } else { %>
+			<div class="alert alert-success" role="alert">
+				<span class="glyphicon glyphicon-ok-circle" aria-hidden="true" style="font-size:36px;vertical-align:middle;top:0;"></span>
+				This stylesheet is Valid. GG:)
 			</div>
-		</body>
-		</html>
+			<% } %>
+		<% } %>
+	</div>
+</body>
+</html>

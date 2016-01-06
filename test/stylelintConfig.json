@@ -1,6 +1,11 @@
 {
-    "extends": "stylelint-config-suitcss",
     "rules": {
-        "number-leading-zero": "always"
+        "block-no-empty": true,
+        "color-hex-case": "lower",
+        "color-hex-length": "short",
+        "color-no-invalid-hex": true,
+        "color-no-named": true,
+        "number-leading-zero": "never",
+        "number-zero-length-no-unit": true
     }
 }

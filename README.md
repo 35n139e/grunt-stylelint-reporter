@@ -85,6 +85,7 @@ Default value: `null`
 json output file path
 
 ## Release History
+* 2016-01-06 v0.1.6 ejs template modifired and "stylelint-config-suitcss" deleted.
 * 2015-12-21 v0.1.5 A configuration file it has to be specified in any directory.
 * 2015-12-17 v0.1.4 package.json bugfix.
 * 2015-12-17 v0.1.3 package.json dependencies modifired.

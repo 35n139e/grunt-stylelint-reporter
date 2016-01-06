@@ -1,7 +1,7 @@
 {
   "name": "grunt-stylelint-reporter",
   "description": "stylelint htmlreporter",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "homepage": "https://github.com/35n139e/grunt-stylelint-reporter",
   "author": {
     "name": "35n139e",
@@ -26,13 +26,10 @@
   "scripts": {
     "test": "grunt reporter"
   },
-  "dependencies": {
-    "ejs": "^2.3.4",
-    "stylelint": "^2.3.6",
-    "stylelint-config-suitcss": "^1.0.0"
-  },
   "devDependencies": {
-    "grunt": "~0.4.5"
+    "grunt": "~0.4.5",
+    "ejs": "^2.3.4",
+    "stylelint": "^2.3.6"
   },
   "keywords": [
     "gruntplugin"
