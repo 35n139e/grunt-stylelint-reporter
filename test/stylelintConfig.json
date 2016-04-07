@@ -4,7 +4,7 @@
         "color-hex-case": "lower",
         "color-hex-length": "short",
         "color-no-invalid-hex": true,
-        "color-no-named": true,
+        "color-named": "never",
         "number-leading-zero": "never",
         "number-zero-length-no-unit": true
     }

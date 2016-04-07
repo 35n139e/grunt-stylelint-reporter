@@ -2,7 +2,14 @@
 [![Build Status](https://travis-ci.org/35n139e/grunt-stylelint-reporter.svg?branch=master)](https://travis-ci.org/35n139e/grunt-stylelint-reporter)
 
 ## Getting Started
-This plugin requires Grunt `~0.4.5`
+
+```
+stylelint rules changed "color-no-named" to "color-named" etc.
+[stylelint rules](http://github.com/stylelint/stylelint/tree/master/src/rules)
+```
+
+This plugin requires Grunt `~1.0.0`
+
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -85,6 +92,7 @@ Default value: `null`
 json output file path
 
 ## Release History
+* 2016-01-06 v2.0.0 grunt 1.0.0, stylelint 5.3.0, ejs2.4.1 updates.
 * 2016-01-06 v0.1.9 stylelint update.
 * 2016-01-06 v0.1.7 Dependencies hotfix.
 * 2016-01-06 v0.1.6 ejs template modifired and "stylelint-config-suitcss" deleted.

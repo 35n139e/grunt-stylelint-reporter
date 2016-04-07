@@ -1,1 +1,1 @@
-[{"source":"C:\\works\\study\\grunt-stylelint-reporter\\test\\test.css","deprecations":[],"errored":true,"warnings":[{"line":6,"column":8,"rule":"color-no-named","severity":"error","text":"Unexpected named color \"red\" (color-no-named)"}]}]
+[{"source":"C:\\works\\study\\grunt-stylelint-reporter\\test\\test.css","deprecations":[],"invalidOptionWarnings":[],"errored":true,"warnings":[{"line":6,"column":8,"rule":"color-named","severity":"error","text":"Unexpected named color \"red\" (color-named)"}]}]
